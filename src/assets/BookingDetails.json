@@ -1,0 +1,35 @@
+[
+    {    
+    "Booking_Number": 1,
+    "Customer_Name": "Rahul Bose",
+    "Cutomer_Rating": "4",
+    "Date": "10/10/2019",
+    "time": "16:00",
+    "Address": "Marathalli",
+    "MapLocation": "11.345,11,432",
+    "RequestedPreperations": [
+      {
+        "DishID": "1",
+        "DishName": "Potato Fries",
+        "DishThumbnail": "https://via.placeholder.com/150/92c952",
+        "Dishtype": "S"
+      },
+      {
+        "DishID": "12",
+        "DishName": "Chicken Butter Masala",
+        "DishThumbnail": "https://via.placeholder.com/150/92c952",
+        "Dishtype": "M"
+      },
+      {
+        "DishID": "10",
+        "DishName": "Gulab Jamun",
+        "DishThumbnail": "https://via.placeholder.com/150/92c952",
+        "DishType": "D"
+      }
+    ],
+    "GrossAmount": "100",
+    "TaxPercent": "",
+    "TaxAmount": "",
+    "NetAmount": ""
+  }
+]
