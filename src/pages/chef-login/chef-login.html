@@ -7,12 +7,24 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>chefLogin</ion-title>
+    <ion-title>Login</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+    <ion-item>
+        <ion-label floating>Chef ID</ion-label>
+        <ion-input type="number"  required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Passkey</ion-label>
+        <ion-input type="password"  required></ion-input>
+      </ion-item>
+      <br>
+    
+    <button ion-button color="light" full (click)="navigateToChefHome()">Continue</button>
 
 </ion-content>
