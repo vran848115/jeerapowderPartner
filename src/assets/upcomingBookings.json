@@ -1,0 +1,35 @@
+[
+    {    
+    "BookingNumber": 1212,
+    "CustomerName": "Rahul Bose",
+    "CustomerProfileThumbnailUrl": "https://via.placeholder.com/150/000FF",
+    "CutomerRating": "4",
+    "Date": "10/Sep/2019",
+    "Time": "4:00 PM",
+    "AddressLineOne": "Flat 301, Vinayaka Residency",
+    "AddressLineTwo": "Marathalli",
+    "MapLocation": "11.345,11,432"
+    },
+    {    
+      "BookingNumber": 1235,
+      "CustomerName": "Shivani Dutt",
+      "CustomerProfileThumbnailUrl": "https://via.placeholder.com/150/FF6347",
+      "CutomerRating": "3.1",
+      "Date": "10/Sep/2019",
+      "Time": "6:00 PM",
+      "AddressLineOne": "Flat 301, SMR Iconia",
+      "AddressLineTwo": "BTM Layout",
+      "MapLocation": "11.345,11,432"
+      },
+      {    
+        "BookingNumber": 1237,
+        "CustomerName": "Komal Sinha",
+        "CustomerProfileThumbnailUrl": "https://via.placeholder.com/150/FFD700",
+        "CutomerRating": "3.1",
+        "Date": "11/Sep/2019",
+        "Time": "10:00 AM",
+        "AddressLineOne": "Saraswati Nialayam, Serilingampally",
+        "AddressLineTwo": "Gachibowli",
+        "MapLocation": "11.345,11,432"
+        }
+]

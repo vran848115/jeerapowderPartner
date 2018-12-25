@@ -1,21 +1,37 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Upcoming Bookings</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <p>
-    Booking Number:
-    Customer Name:
-    Cutomer Rating
-    Date and time
-    Address
-    Map Location
-    Requested Preperations
-    Total Amount Breakup:
 
+    <ion-card  *ngFor="let booking of bookings">
+        <ion-card-header>
+            Booking ID: {{booking.BookingNumber}}
+          </ion-card-header>
 
-
-  </p>
-</ion-content>
+        <ion-item>
+          <ion-avatar item-start>
+            <img [src]="booking.CustomerProfileThumbnailUrl">
+          </ion-avatar>
+          <ion-row>
+            <ion-col col-8><h2>{{booking.CustomerName}}</h2></ion-col>
+          </ion-row> 
+          <ion-row>   
+              <ion-col col-6> {{booking.Date}}, {{booking.Time}}</ion-col>
+          </ion-row>  
+        </ion-item>        
+        <ion-card-content>
+          <p>{{booking.AddressLineOne}}</p>
+          <p>{{booking.AddressLineTwo}}</p>
+            <!-- <div align="right"><button ion-button small color="danger" (click) = "chefCancelledBooking()">Cancel</button></div> -->
+            <ion-grid>
+                <ion-row>
+                  <ion-col col-6><button ion-button full color="primary" (click) = "navigateToBookingDetails()">View Details</button></ion-col>
+                  <ion-col col-6><button ion-button full color="danger" (click) = "chefCancelledBooking()">Cancel</button></ion-col>
+                </ion-row>
+              </ion-grid>
+        </ion-card-content>
+      </ion-card>
+</ion-content> 

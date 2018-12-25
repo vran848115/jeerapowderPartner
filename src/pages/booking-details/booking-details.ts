@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ChefAccountsPage } from '../chef-accounts/chef-accounts';
 
 /**
- * Generated class for the ChefProfilePage page.
+ * Generated class for the BookingDetailsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { ChefAccountsPage } from '../chef-accounts/chef-accounts';
 
 @IonicPage()
 @Component({
-  selector: 'page-chef-profile',
-  templateUrl: 'chef-profile.html',
+  selector: 'page-booking-details',
+  templateUrl: 'booking-details.html',
 })
-export class ChefProfilePage {
+export class BookingDetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ChefProfilePage');
-  }
-
-  navigateToAccounts(){
-    this.navCtrl.push(ChefAccountsPage);
+    console.log('ionViewDidLoad BookingDetailsPage');
   }
 
 }

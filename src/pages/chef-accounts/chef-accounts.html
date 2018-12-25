@@ -1,18 +1,34 @@
-<!--
-  Generated template for the ChefAccountsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>chefAccounts</ion-title>
+    <ion-title>Accounts</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<ion-grid>
+  <ion-row align-items-center>
+    <ion-col col-4><h4>Account Balance </h4></ion-col>
+    <ion-col col-3><h3>&#8377;1232 </h3></ion-col>
+    <ion-col col-5><button ion-button round color="secondary" (click) = "transferFunds()">Transfer</button></ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col col-4><h4>Total Earnings </h4></ion-col>
+      <ion-col col-3><h3>&#8377;5432 </h3></ion-col>
+    </ion-row>
+</ion-grid>
+    
+    <ion-segment [(ngModel)]="completedTransactions">
+        <ion-segment-button value="Price">
+          Last 10
+        </ion-segment-button>
+        <ion-segment-button value="AvgRating">
+           Since last payout
+        </ion-segment-button>
+      </ion-segment>
+
+    
 
 </ion-content>

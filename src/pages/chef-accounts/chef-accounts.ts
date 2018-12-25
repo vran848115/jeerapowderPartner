@@ -21,5 +21,8 @@ export class ChefAccountsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChefAccountsPage');
   }
+  transferFunds(){
+    console.log("Transfer Funds");
+  }
 
 }

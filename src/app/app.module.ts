@@ -13,6 +13,8 @@ import { ChefProfilePage } from '../pages/chef-profile/chef-profile';
 import { ChefHelpAndSupportPage } from '../pages/chef-help-and-support/chef-help-and-support';
 import { ChefAccountsPage } from '../pages/chef-accounts/chef-accounts';
 import { ChefLoginPage } from '../pages/chef-login/chef-login';
+import { BookingDetailsPage } from '../pages/booking-details/booking-details';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { ChefLoginPage } from '../pages/chef-login/chef-login';
     ChefProfilePage,
     ChefHelpAndSupportPage,
     ChefAccountsPage,
-    ChefLoginPage
+    ChefLoginPage,
+    BookingDetailsPage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -38,7 +42,8 @@ import { ChefLoginPage } from '../pages/chef-login/chef-login';
     HomePage,
     TabsPage,
     ChefAccountsPage,
-    ChefLoginPage
+    ChefLoginPage,
+    BookingDetailsPage
   ],
   providers: [
     StatusBar,
