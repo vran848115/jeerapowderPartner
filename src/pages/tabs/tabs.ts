@@ -1,20 +1,24 @@
 import { Component } from '@angular/core';
-import { HomePage } from '../home/home';
-import { ChefBookingsHistoryPage } from '../chef-bookings-history/chef-bookings-history';
-import { ChefProfilePage } from '../chef-profile/chef-profile';
-import { ChefHelpAndSupportPage } from '../chef-help-and-support/chef-help-and-support';
+import { OngoingBookingPage } from '../ongoingBookingPages/ongoing-booking/ongoing-booking';
+import { HomePage } from '../upcomingBookingPages/home/home';
+import { ChefProfilePage } from '../profilePages/chef-profile/chef-profile';
+import { ChefAccountsPage } from '../AccountsPages/chef-accounts/chef-accounts';
+
+
 
 @Component({
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = ChefBookingsHistoryPage;
+  tab1Root = OngoingBookingPage;
+  tab2Root = HomePage;
   tab3Root = ChefProfilePage;
-  tab4Root = ChefHelpAndSupportPage;
+  tab4Root = ChefAccountsPage;
+
 
   constructor() {
 
   }
 }
+

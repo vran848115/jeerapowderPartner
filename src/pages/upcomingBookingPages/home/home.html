@@ -5,7 +5,14 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-segment [(ngModel)]="bookingDetails">
+    <ion-segment-button value="upcomingBookings">
+      Upcoming
+    </ion-segment-button>
+    <ion-segment-button value="completedBookings">
+       Completed
+    </ion-segment-button>
+  </ion-segment>
     <ion-card  *ngFor="let booking of bookings">
         <ion-card-header>
             Booking ID: {{booking.BookingNumber}}

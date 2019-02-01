@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ChefHelpAndSupportPage page.
+ * Generated class for the PreperationsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-chef-help-and-support',
-  templateUrl: 'chef-help-and-support.html',
+  selector: 'page-preperations',
+  templateUrl: 'preperations.html',
 })
-export class ChefHelpAndSupportPage {
+export class PreperationsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ChefHelpAndSupportPage');
+    console.log('ionViewDidLoad PreperationsPage');
   }
 
 }
